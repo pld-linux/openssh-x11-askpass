@@ -4,7 +4,7 @@ Summary(pl):	Odpytywacz has³a OpenSSH dla X11
 Name:		openssh-x11-askpass
 Version:	1.2.4.1
 Release:	1
-License:	free
+License:	Free
 Group:		Applications/Networking
 Source0:	http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
 URL:		http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/

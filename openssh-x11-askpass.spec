@@ -7,9 +7,9 @@ Release:	1
 Copyright:	free
 Group:		Applications/Networking
 Group(pl):	Aplikacje/Sieciowe
-URL:		http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/
 Source:		http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
 BuildRequires:	XFree86-devel
+URL:		http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/
 Requires:	openssh
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

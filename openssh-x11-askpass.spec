@@ -6,8 +6,9 @@ Version:	1.2.0
 Release:	1
 Copyright:	free
 Group:		Applications/Networking
+Group(de):	Applikationen/Netzwerkwesen
 Group(pl):	Aplikacje/Sieciowe
-Source:		http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
+Source0:	http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
 BuildRequires:	XFree86-devel
 URL:		http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/
 Requires:	openssh
@@ -16,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix		/usr/X11R6
 
 %description
-This is an X11-based passphrase dialog for use with OpenSSH. 
+This is an X11-based passphrase dialog for use with OpenSSH.
 
 %description -l pl
 To jest bazuj±cy na X11 odpytywacz has³a do u¿ytku z OpenSSH.
@@ -25,8 +26,8 @@ To jest bazuj±cy na X11 odpytywacz has³a do u¿ytku z OpenSSH.
 %setup -q -n %{_rn}-%{version}
 
 %build
-%{_bindir}/xmkmf
-CXXEXTRA_DEFINES="$RPM_OPT_FLAGS" make includes all
+/usr/X11R6/bin/xmkmf
+CXXEXTRA_DEFINES="%{rpmcflags}" make includes all
 
 %install
 rm -rf $RPM_BUILD_ROOT

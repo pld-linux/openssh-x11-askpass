@@ -32,7 +32,7 @@ CXXEXTRA_DEFINES="$RPM_OPT_FLAGS" make includes all
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install \
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	BINDIR=%{_bindir}
 

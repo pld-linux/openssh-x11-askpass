@@ -73,7 +73,7 @@ install -d $RPM_BUILD_ROOT/etc/profile.d
 echo "setenv SSH_ASKPASS \"/usr/bin/ssh-askpass\"" \
 	> $RPM_BUILD_ROOT/etc/profile.d/openssh-askpass.csh
 
-echo "export SSH_ASKPASS \"/usr/bin/ssh-askpass\"" \
+echo "export SSH_ASKPASS=\"/usr/bin/ssh-askpass\"" \
 	> $RPM_BUILD_ROOT/etc/profile.d/openssh-askpass.sh
 
 %clean

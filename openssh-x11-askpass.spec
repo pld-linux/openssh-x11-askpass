@@ -4,13 +4,13 @@ Summary(pl):	Odpytywacz has³a OpenSSH dla X11
 Name:		openssh-x11-askpass
 Version:	1.2.4.1
 Release:	1
-Copyright:	free
+License:	free
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
 Group(pl):	Aplikacje/Sieciowe
 Source0:	http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
-BuildRequires:	XFree86-devel
 URL:		http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/
+BuildRequires:	XFree86-devel
 Requires:	openssh
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,7 +27,7 @@ To jest bazuj±cy na X11 odpytywacz has³a do u¿ytku z OpenSSH.
 
 %build
 /usr/X11R6/bin/xmkmf
-CXXEXTRA_DEFINES="%{rpmcflags}" make includes all
+CXXEXTRA_DEFINES="%{rpmcflags}" %{__make} includes all
 
 %install
 rm -rf $RPM_BUILD_ROOT

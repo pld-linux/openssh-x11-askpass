@@ -15,6 +15,7 @@ Release:	2
 License:	Free
 Group:		Applications/Networking
 Source0:	http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
+# Source0-md5:	b83a9f5f6c63ef32054178b19b142a5c
 URL:		http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/
 BuildRequires:	XFree86-devel
 Requires:	openssh

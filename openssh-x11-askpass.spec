@@ -11,7 +11,7 @@ Summary(ru):	OpenSSH - диалог ввода ключевой фразы (passphrase) для X11
 Summary(uk):	OpenSSH - д╕алог вводу ключово╖ фрази (passphrase) для X11
 Name:		openssh-x11-askpass
 Version:	1.2.4.1
-Release:	2
+Release:	3
 License:	Free
 Group:		Applications/Networking
 Source0:	http://www.jmknoble.net/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
@@ -21,6 +21,7 @@ BuildRequires:	XFree86-devel
 Requires:	openssh
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_appdefsdir	/usr/X11R6/lib/X11/app-defaults
 
 %description
 This is an X11-based passphrase dialog for use with OpenSSH.
@@ -55,7 +56,9 @@ X11.
 
 %build
 xmkmf
-CXXEXTRA_DEFINES="%{rpmcflags}" %{__make} includes all
+%{__make} includes all \
+	CC="%{__cc}" \
+	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -71,4 +74,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/*
-%{_libdir}/X11/app-defaults/SshAskpass
+%{_appdefsdir}/SshAskpass

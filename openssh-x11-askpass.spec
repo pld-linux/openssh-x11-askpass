@@ -11,7 +11,7 @@ Summary(ru):	OpenSSH - диалог ввода ключевой фразы (passphrase) для X11
 Summary(uk):	OpenSSH - д╕алог вводу ключово╖ фрази (passphrase) для X11
 Name:		openssh-x11-askpass
 Version:	1.2.4.1
-Release:	4
+Release:	5
 License:	Free
 Group:		Applications/Networking
 Source0:	http://www.jmknoble.net/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
@@ -19,7 +19,6 @@ Source0:	http://www.jmknoble.net/software/x11-ssh-askpass/%{_rn}-%{version}.tar.
 URL:		http://www.jmknoble.net/software/x11-ssh-askpass/
 BuildRequires:	XFree86-devel
 Requires:	openssh
-Obsoletes:	openssh-gnome-askpass
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_appdefsdir	/usr/X11R6/lib/X11/app-defaults
@@ -67,14 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	BINDIR=%{_bindir}
-
-install -d $RPM_BUILD_ROOT/etc/profile.d
-
-echo "setenv SSH_ASKPASS \"/usr/bin/ssh-askpass\"" \
-	> $RPM_BUILD_ROOT/etc/profile.d/openssh-askpass.csh
-
-echo "export SSH_ASKPASS=\"/usr/bin/ssh-askpass\"" \
-	> $RPM_BUILD_ROOT/etc/profile.d/openssh-askpass.sh
 
 %clean
 rm -rf $RPM_BUILD_ROOT

@@ -2,7 +2,7 @@
 Summary:	OpenSSH X11 passphrase dialog
 Summary(pl):	Odpytywacz has³a OpenSSH dla X11
 Name:		openssh-x11-askpass
-Version:	1.2.0
+Version:	1.2.4.1
 Release:	1
 Copyright:	free
 Group:		Applications/Networking

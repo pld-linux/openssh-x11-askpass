@@ -6,8 +6,6 @@ Version:	1.2.4.1
 Release:	1
 License:	free
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(pl):	Aplikacje/Sieciowe
 Source0:	http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
 URL:		http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/
 BuildRequires:	XFree86-devel

@@ -20,7 +20,6 @@ BuildRequires:	XFree86-devel
 Requires:	openssh
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 This is an X11-based passphrase dialog for use with OpenSSH.

@@ -3,7 +3,7 @@ Summary:	OpenSSH X11 passphrase dialog
 Summary(pl):	Odpytywacz has³a OpenSSH dla X11
 Name:		openssh-x11-askpass
 Version:	1.0
-Release:	1
+Release:	2
 Copyright:	free
 Group:		Applications/Networking
 Group(pl):	Aplikacje/Sieciowe
@@ -13,7 +13,7 @@ URL:		http://www.pobox.com/~jmknoble/software/x11-ssh-askpass/
 Requires:	openssh
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_prefix	/usr/X11R6
+%define		_prefix		/usr/X11R6
 
 %description
 This is an X11-based passphrase dialog for use with OpenSSH. 
@@ -45,4 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.gz
 %attr(755,root,root) %{_bindir}/*
-/etc/X11/app-defaults/SshAskpass
+%{_libdir}/X11/app-defaults/SshAskpass

@@ -20,11 +20,11 @@ This is an X11-based passphrase dialog for use with OpenSSH.
 %description -l pl
 To jest bazuj±cy na X11 odpytywacz has³a do u¿ytku z OpenSSH.
 
-%prep 
+%prep
 %setup -q -n %{_rn}-%{version}
 
 %build
-/usr/X11R6/bin/xmkmf
+xmkmf
 CXXEXTRA_DEFINES="%{rpmcflags}" %{__make} includes all
 
 %install

@@ -25,7 +25,6 @@ To jest bazuj±cy na X11 odpytywacz has³a do u¿ytku z OpenSSH.
 %setup -q -n %{_rn}-%{version}
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %{_bindir}/xmkmf
 CXXEXTRA_DEFINES="$RPM_OPT_FLAGS" make includes all
 

@@ -1,14 +1,14 @@
 %define	_rn	x11-ssh-askpass
 Summary:	OpenSSH X11 passphrase dialog
-Summary(de):	OpenSSH X11 Passwort-Dialog
-Summary(es):	DiАlogo para introducciСn de passphrase para X11
-Summary(fr):	Dialogue pass-phrase X11 d'OpenSSH
-Summary(it):	Finestra di dialogo X11 per la frase segreta di OpenSSH
-Summary(pl):	Odpytywacz hasЁa OpenSSH dla X11
-Summary(pt):	DiАlogo de pedido de senha para X11 do OpenSSH
-Summary(pt_BR):	DiАlogo para entrada de passphrase para X11
-Summary(ru):	OpenSSH - диалог ввода ключевой фразы (passphrase) для X11
-Summary(uk):	OpenSSH - д╕алог вводу ключово╖ фрази (passphrase) для X11
+Summary(de.UTF-8):   OpenSSH X11 Passwort-Dialog
+Summary(es.UTF-8):   Diц║logo para introducciцЁn de passphrase para X11
+Summary(fr.UTF-8):   Dialogue pass-phrase X11 d'OpenSSH
+Summary(it.UTF-8):   Finestra di dialogo X11 per la frase segreta di OpenSSH
+Summary(pl.UTF-8):   Odpytywacz hasе┌a OpenSSH dla X11
+Summary(pt.UTF-8):   Diц║logo de pedido de senha para X11 do OpenSSH
+Summary(pt_BR.UTF-8):   Diц║logo para entrada de passphrase para X11
+Summary(ru.UTF-8):   OpenSSH - п╢п╦п╟п╩п╬пЁ п╡п╡п╬п╢п╟ п╨п╩я▌я┤п╣п╡п╬п╧ я└я─п╟п╥я▀ (passphrase) п╢п╩я▐ X11
+Summary(uk.UTF-8):   OpenSSH - п╢я√п╟п╩п╬пЁ п╡п╡п╬п╢я┐ п╨п╩я▌я┤п╬п╡п╬я≈ я└я─п╟п╥п╦ (passphrase) п╢п╩я▐ X11
 Name:		openssh-x11-askpass
 Version:	1.2.4.1
 Release:	5
@@ -26,29 +26,29 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is an X11-based passphrase dialog for use with OpenSSH.
 
-%description -l es
-Este paquete contiene un programa que abre una caja de diАlogo para
+%description -l es.UTF-8
+Este paquete contiene un programa que abre una caja de diц║logo para
 entrada de passphrase en X11.
 
-%description -l pl
-To jest bazuj╠cy na X11 odpytywacz hasЁa do u©ytku z OpenSSH.
+%description -l pl.UTF-8
+To jest bazujд┘cy na X11 odpytywacz hasе┌a do uе╪ytku z OpenSSH.
 
-%description -l pt_BR
-Esse pacote contИm um programa que abre uma caixa de diАlogo para
+%description -l pt_BR.UTF-8
+Esse pacote contц╘m um programa que abre uma caixa de diц║logo para
 entrada de passphrase no X11.
 
-%description -l ru
-Ssh (Secure Shell) - это программа для "захода" (login) на удаленную
-машину и для выполнения команд на удаленной машине.
+%description -l ru.UTF-8
+Ssh (Secure Shell) - я█я┌п╬ п©я─п╬пЁя─п╟п╪п╪п╟ п╢п╩я▐ "п╥п╟я┘п╬п╢п╟" (login) п╫п╟ я┐п╢п╟п╩п╣п╫п╫я┐я▌
+п╪п╟я┬п╦п╫я┐ п╦ п╢п╩я▐ п╡я▀п©п╬п╩п╫п╣п╫п╦я▐ п╨п╬п╪п╟п╫п╢ п╫п╟ я┐п╢п╟п╩п╣п╫п╫п╬п╧ п╪п╟я┬п╦п╫п╣.
 
-Этот пакет содержит диалог ввода ключевой фразы для использования под
+п╜я┌п╬я┌ п©п╟п╨п╣я┌ я│п╬п╢п╣я─п╤п╦я┌ п╢п╦п╟п╩п╬пЁ п╡п╡п╬п╢п╟ п╨п╩я▌я┤п╣п╡п╬п╧ я└я─п╟п╥я▀ п╢п╩я▐ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦я▐ п©п╬п╢
 X11.
 
-%description -l uk
-Ssh (Secure Shell) - це програма для "заходу" (login) до в╕ддалено╖
-машини та для виконання команд на в╕ддален╕й машин╕.
+%description -l uk.UTF-8
+Ssh (Secure Shell) - я├п╣ п©я─п╬пЁя─п╟п╪п╟ п╢п╩я▐ "п╥п╟я┘п╬п╢я┐" (login) п╢п╬ п╡я√п╢п╢п╟п╩п╣п╫п╬я≈
+п╪п╟я┬п╦п╫п╦ я┌п╟ п╢п╩я▐ п╡п╦п╨п╬п╫п╟п╫п╫я▐ п╨п╬п╪п╟п╫п╢ п╫п╟ п╡я√п╢п╢п╟п╩п╣п╫я√п╧ п╪п╟я┬п╦п╫я√.
 
-Цей пакет м╕стить д╕алог вводу ключово╖ фрази для використання п╕д
+п╕п╣п╧ п©п╟п╨п╣я┌ п╪я√я│я┌п╦я┌я▄ п╢я√п╟п╩п╬пЁ п╡п╡п╬п╢я┐ п╨п╩я▌я┤п╬п╡п╬я≈ я└я─п╟п╥п╦ п╢п╩я▐ п╡п╦п╨п╬я─п╦я│я┌п╟п╫п╫я▐ п©я√п╢
 X11.
 
 %prep

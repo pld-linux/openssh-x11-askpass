@@ -1,14 +1,14 @@
 %define	_rn	x11-ssh-askpass
 Summary:	OpenSSH X11 passphrase dialog
-Summary(de.UTF-8):   OpenSSH X11 Passwort-Dialog
-Summary(es.UTF-8):   Diálogo para introducción de passphrase para X11
-Summary(fr.UTF-8):   Dialogue pass-phrase X11 d'OpenSSH
-Summary(it.UTF-8):   Finestra di dialogo X11 per la frase segreta di OpenSSH
-Summary(pl.UTF-8):   Odpytywacz hasła OpenSSH dla X11
-Summary(pt.UTF-8):   Diálogo de pedido de senha para X11 do OpenSSH
-Summary(pt_BR.UTF-8):   Diálogo para entrada de passphrase para X11
-Summary(ru.UTF-8):   OpenSSH - диалог ввода ключевой фразы (passphrase) для X11
-Summary(uk.UTF-8):   OpenSSH - діалог вводу ключової фрази (passphrase) для X11
+Summary(de.UTF-8):	OpenSSH X11 Passwort-Dialog
+Summary(es.UTF-8):	Diálogo para introducción de passphrase para X11
+Summary(fr.UTF-8):	Dialogue pass-phrase X11 d'OpenSSH
+Summary(it.UTF-8):	Finestra di dialogo X11 per la frase segreta di OpenSSH
+Summary(pl.UTF-8):	Odpytywacz hasła OpenSSH dla X11
+Summary(pt.UTF-8):	Diálogo de pedido de senha para X11 do OpenSSH
+Summary(pt_BR.UTF-8):	Diálogo para entrada de passphrase para X11
+Summary(ru.UTF-8):	OpenSSH - диалог ввода ключевой фразы (passphrase) для X11
+Summary(uk.UTF-8):	OpenSSH - діалог вводу ключової фрази (passphrase) для X11
 Name:		openssh-x11-askpass
 Version:	1.2.4.1
 Release:	5

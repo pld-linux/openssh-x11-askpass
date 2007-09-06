@@ -18,9 +18,9 @@ Source0:	http://www.jmknoble.net/software/x11-ssh-askpass/%{_rn}-%{version}.tar.
 # Source0-md5:	8f2e41f3f7eaa8543a2440454637f3c3
 URL:		http://www.jmknoble.net/software/x11-ssh-askpass/
 BuildRequires:	xorg-lib-libX11-devel
-BuildRequires:	xorg-lib-libXt-devel
-BuildRequires:	xorg-proto-xproto-devel
+BuildRequires:	xorg-lib-libXt-devel >= 1.0.0
 Requires:	openssh
+Requires:	xorg-lib-libXt >= 1.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_appdefsdir	%{_datadir}/X11/app-defaults

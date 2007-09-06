@@ -11,17 +11,19 @@ Summary(ru.UTF-8):	OpenSSH - диалог ввода ключевой фразы
 Summary(uk.UTF-8):	OpenSSH - діалог вводу ключової фрази (passphrase) для X11
 Name:		openssh-x11-askpass
 Version:	1.2.4.1
-Release:	5
+Release:	6
 License:	Free
 Group:		Applications/Networking
 Source0:	http://www.jmknoble.net/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
 # Source0-md5:	8f2e41f3f7eaa8543a2440454637f3c3
 URL:		http://www.jmknoble.net/software/x11-ssh-askpass/
-BuildRequires:	XFree86-devel
+BuildRequires:	xorg-lib-libX11-devel
+BuildRequires:	xorg-lib-libXt-devel
+BuildRequires:	xorg-proto-xproto-devel
 Requires:	openssh
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_appdefsdir	/usr/X11R6/lib/X11/app-defaults
+%define		_appdefsdir	%{_datadir}/X11/app-defaults
 
 %description
 This is an X11-based passphrase dialog for use with OpenSSH.
@@ -53,9 +55,15 @@ X11.
 
 %prep
 %setup -q -n %{_rn}-%{version}
+rm -f Imakefile
 
 %build
+./configure \
+	--libexecdir=%{_bindir} \
+	--mandir=%{_mandir} \
+	--with-app-defaults-dir=%{_appdefsdir}
 xmkmf
+
 %{__make} includes all \
 	CC="%{__cc}" \
 	CDEBUGFLAGS="%{rpmcflags}"
@@ -64,8 +72,7 @@ xmkmf
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	BINDIR=%{_bindir}
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT

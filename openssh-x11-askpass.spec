@@ -11,7 +11,7 @@ Summary(ru.UTF-8):	OpenSSH - диалог ввода ключевой фразы
 Summary(uk.UTF-8):	OpenSSH - діалог вводу ключової фрази (passphrase) для X11
 Name:		openssh-x11-askpass
 Version:	1.2.4.1
-Release:	6
+Release:	7
 License:	Free
 Group:		Applications/Networking
 Source0:	http://www.jmknoble.net/software/x11-ssh-askpass/%{_rn}-%{version}.tar.gz
